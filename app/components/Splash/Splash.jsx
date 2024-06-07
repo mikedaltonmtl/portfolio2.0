@@ -63,14 +63,14 @@ export default function Splash() {
         setIsTyping(false);
         setTimeout(() => {
           const textContainer = textRef.current.parentNode;
-          textContainer.classList.add('styles.fade-out');
+          textContainer.classList.add(styles.fadeOut);
           setTimeout(() => {
             setCurrentIndex((currentIndex + 1) % content.length);
-            textContainer.classList.remove('styles.fade-out');
-            textContainer.classList.add('styles.fade-in');
+            textContainer.classList.remove(styles.fadeOut);
+            textContainer.classList.add(styles.fadeIn);
             setIsTyping(true);
             setTimeout(() => {
-              textContainer.classList.remove('styles.fade-in');
+              textContainer.classList.remove(styles.fadeIn);
             }, 500);
           }, 500);
         }, 2000);
@@ -82,13 +82,12 @@ export default function Splash() {
     };
   }, [currentIndex]);
 
-
   return (
-    <div className="h-screen bg-[#ffffdb] flex justify-start items-start">
-      <div className="text-left m-10 max-w-md text-container">
-        <h1 className="text-4xl font-bold text-orange-500 mb-4">{content[currentIndex].title}</h1>
-        <span ref={textRef} className="text-4xl text-orange-500 align-middle" style={{ whiteSpace: 'pre-wrap' }} />
-        <span className={`cursor ${isTyping ? '' : styles.cursorBlink}`} />
+    <div className="h-screen bg-bgLight flex justify-start items-start">
+      <div className={`text-left m-10 max-w-md ${styles.textContainer}`}>
+        <h1 className="text-4xl font-bold text-primary mb-4">{content[currentIndex].title}</h1>
+        <span ref={textRef} className="text-4xl text-primary align-middle" style={{ whiteSpace: 'pre-wrap' }} />
+        <span className={`after:bg-primary ${styles.cursor} ${isTyping ? '' : styles.cursorBlink}`} />
       </div>
     </div>
   );
