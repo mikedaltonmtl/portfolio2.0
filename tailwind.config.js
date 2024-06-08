@@ -16,6 +16,25 @@ module.exports = {
         'primary': '#f97316',
         'bgLight': '#ffffdb',
       },
+      animation: {
+        'slide-in-from-left': 'slide-in-from-left 1s cubic-bezier(0.68, -0.9, 0.265, 1.9)',
+        'slide-in-from-right': 'slide-in-from-right 1s cubic-bezier(0.68, -0.9, 0.265, 1.9)',
+        'jiggle': 'jiggle 0.5s ease-in-out',
+      },
+      keyframes: {
+        'slide-in-from-left': {
+          '0%': { transform: 'translateX(-100%)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
+        'slide-in-from-right': {
+          '0%': { transform: 'translateX(100%)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
+        'jiggle': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
     },
   },
   plugins: [],
