@@ -4,16 +4,18 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex justify-center items-center gap-10 px-10 md:px-20 lg:px-30 pt-24 bg-bgLight"
+      className="flex justify-center items-center gap-10"
     >
-      <div className="w-1/2 max-w-md relative group">
-        <div className="relative overflow-hidden rounded-md border-2 border-primary">
+      <div className="w-1/2 max-w-md">
+        <div className="overflow-hidden w-80 rounded-md border-2 border-primary">
+          {/* className="md:mb-10 md:mt-0 mt-14 mb-2 flex-shrink-0 w-44 h-44 rounded-full object-cover md:rounded-lg border border-white overflow-hidden" */}
+
           <Image
             src="/mikeA.jpg"
             alt="about image"
             width={300}
             height={300}
-            className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+            className="w-full h-full hover:scale-125 transition-transform duration-1000"
           />
         </div>
       </div>
