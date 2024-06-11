@@ -1,5 +1,6 @@
 import About from "./components/About/About";
 import Header from "./components/Header/Header";
+import Projects from "./components/Projects/Projects";
 import Splash from "./components/Splash/Splash";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <Splash />
       <About />
+      <Projects />
       {/* <About /> */}
       <Splash />
 
