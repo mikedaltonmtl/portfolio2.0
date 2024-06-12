@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex justify-center items-center gap-10"
+      className="flex justify-center items-center gap-10 px-[5vw]"
     >
       <div className="w-1/2 max-w-md">
         <FadeIn threshold={0.2} >
@@ -22,7 +22,7 @@ export default function About() {
       </div>
       <div className="w-1/2 max-w-md">
         <FadeIn threshold={0.2} >
-          <h2 className="text-3xl font-bold text-primary mb-5">About Me</h2>
+          <h2 className="text-4xl font-bold text-primary mb-5">A Little Background...</h2>
         </FadeIn>
         <FadeIn>
           <p className="text-lg text-primary mb-5">

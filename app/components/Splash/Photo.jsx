@@ -8,10 +8,11 @@ export default function Photo() {
   const [image, setImage] = useState('/mikeB.jpeg');
   const [timeoutId, setTimeoutId] = useState(null);
   const linkItems = [
-    { href: '#about', text: 'About', image: '/cart1.png' },
-    { href: '#projects', text: 'Projects', image: '/cart2.jpeg' },
-    { href: '#contact', text: 'Contact', image: '/mikeA.jpg' },
+    { href: '#about', text: 'About', image: '/cart1.png', alt: 'A photo of a cart' },
+    { href: '#projects', text: 'Projects', image: '/cart2.jpeg', alt: 'A photo of another cart' },
+    { href: '#contact', text: 'Contact', image: '/mikeA.jpg', alt: 'A photo of Mike Dalton' },
   ];
+  const originalImageAlt = 'A photo of Mike Dalton';
 
   const handleMouseOver = (newImage) => {
     if (timeoutId) clearTimeout(timeoutId);
@@ -38,7 +39,7 @@ export default function Photo() {
           <div className="w-72 h-72 relative">
             <Image
               src={image}
-              alt="Your Name"
+              alt={linkItems.find(item => item.image === image)?.alt || originalImageAlt}
               fill
               priority
               placeholder="blur"
