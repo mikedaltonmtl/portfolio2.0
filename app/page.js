@@ -1,6 +1,7 @@
 import About from "./components/About/About";
 import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
+import Skills from "./components/Skills/Skills";
 import Splash from "./components/Splash/Splash";
 
 export default function Home() {
@@ -11,7 +12,8 @@ export default function Home() {
       <Splash />
       <About />
       <Projects />
-      {/* <About /> */}
+      <Skills />
+      {/* just to add bulk */}
       <Splash />
 
     </main>

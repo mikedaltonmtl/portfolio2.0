@@ -1,0 +1,23 @@
+.scroller {
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.innerScroller {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+  padding-block: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.innerScroller li {
+  padding: 1rem;
+  color: white;
+  background: #f97316;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem -0.25rem;
+}
+

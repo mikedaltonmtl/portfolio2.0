@@ -94,7 +94,7 @@ export default function Phrases() {
 
   return (
     <div className="h-screen w-1/2 flex justify-start items-start">
-      <div className={`text-left m-10 max-w-xl ${styles.textContainer}`}>
+      <div className={`text-left m-[3vw] max-w-xl ${styles.textContainer}`}>
         <h1 className="text-4xl font-bold text-primary mb-4">{phrases[currentIndex].title}</h1>
         <span ref={textRef} className="text-4xl text-primary align-middle" style={{ whiteSpace: 'pre-wrap' }} />
         <span className={`after:bg-primary ${styles.cursor} ${isTyping ? '' : styles.cursorBlink}`} />

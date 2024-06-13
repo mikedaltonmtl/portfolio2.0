@@ -22,10 +22,10 @@ export default function Projects() {
   return (
     <div className="h-[400vh] relative">
       <div className="sticky top-0 h-screen overflow-hidden">
-        <div className="scroll-section top-0 h-full w-screen will-change-transform flex justify-between items-center gap-x-80 px-[5vw]">
-          <div className="h-3/5 mb-4 ml-10">
+        <div className="scroll-section top-0 h-full w-screen will-change-transform flex justify-start items-center gap-x-80 ml-10 pr-[5vw]">
+          <div className="h-3/5 mb-4">
             <FadeIn threshold={0.3} >
-              <h1 className="text-4xl font-bold text-primary">Some Projects I May Have Worked On...</h1>
+              <h2 className="text-4xl font-bold text-primary">Some Projects I May Have Worked On</h2>
             </FadeIn>
           </div>
           <ProjectList />
