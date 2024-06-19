@@ -5,48 +5,32 @@ import styles from './Splash.module.css';
 
 const phrases = [
   {
-    title: "Boring fella",
-    subtitle: "who actually enjoys testing"
+    title: "Who is this Mike Dalton?",
+    subtitle: "let's find out, shall we?"
   },
   {
-    title: "He may be old",
-    subtitle: "but he learns fast"
+    title: "He's really quite a boring person",
+    subtitle: "who actually enjoys testing and debugging code"
   },
   {
-    title: "Slighly OCD",
-    subtitle: "keeps it all pixel-perfect"
+    title: "He may look a little old",
+    subtitle: "but he doesn't half learn fast!"
   },
   {
-    title: "Passionate about web development",
-    subtitle: "and learning to craft good-looking, functional websites"
+    title: "They say he's slightly OCD",
+    subtitle: "but that just means he keeps it all pixel-perfect"
   },
   {
-    title: "Front-end Technologies",
-    subtitle: "Proficient in HTML, CSS, JavaScript, and loves staying up-to-date with the latest front-end trends."
+    title: "Does he really love to code?",
+    subtitle: "the answer is 'yes!' especially if he gets to use React"
   },
   {
-    title: "User Experience Enthusiast",
-    subtitle: "Committed to creating intuitive and user-centered designs that enhance the overall digital experience."
+    title: "Is he passionate about web development, though?",
+    subtitle: "well he keeps on plugging away, trying to improve his Web Dev skills"
   },
   {
-    title: "Loves to code",
-    subtitle: "proficient in JavaScript, HTML, CSS, and Python."
-  },
-  {
-    title: "Responsive Design Specialist",
-    subtitle: " Skilled in crafting responsive layouts that adapt seamlessly to various devices and screen sizes."
-  },
-  {
-    title: "Innovation-Driven",
-    subtitle: "Always eager to explore new technologies and implement innovative solutions to problems."
-  },
-  {
-    title: "Detail-Oriented Perfectionist",
-    subtitle: "Commited to delivering high-quality work with a keen eye for detail."
-  },
-  {
-    title: "Continuous Learner",
-    subtitle: "Embraces lifelong learning and stays updated with the latest industry best practices and trends."
+    title: "Can he impliment Responsive Design?",
+    subtitle: "he know his way around ....."
   },
   {
     title: "Creative Problem Solver",
