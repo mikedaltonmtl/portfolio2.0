@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const projects = [
   {
@@ -53,21 +54,36 @@ export default function ProjectList() {
   return (
     <>
       {projects.map((project) => (
-        <Image
+        <div
           key={project.id}
-          src={`/projects${project.image}`}
-          alt={project.title}
-          width={project.width}
-          height={project.height}
-          className='shadow-2xl border-0 border-primary'
+          className="relative"
           style={{
-            objectFit: 'cover',
-            objectPosition: 'center',
-            width: 'auto',
+            aspectRatio: `${project.width} / ${project.height}`,
             height: '60%',
           }}
-          unoptimized
-        />
+        >
+          <Link
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative block group"
+          >
+            <Image
+              src={`/projects${project.image}`}
+              alt={project.title}
+              width={project.width}
+              height={project.height}
+              className='shadow-2xl border-0 border-primary object-cover object-center group-hover:brightness-[0.25] transition-all duration-300'
+              unoptimized
+              priority
+            />
+            <div className="absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100 transition-all duration-500 delay-150 group-hover:translate-y-[-20px]">
+              <div className="bg-gray-100 py-8 px-12 rounded-md text-black text-lg font-bold">
+                Explore
+              </div>
+            </div>
+          </Link>
+        </div>
       ))}
     </>
   );
