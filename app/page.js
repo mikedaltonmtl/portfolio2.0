@@ -1,4 +1,5 @@
 import About from "./components/About/About";
+import Feedback from "./components/Feedback/Feedback";
 import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Projects />
       <Skills />
+      <Feedback />
       {/* just to add bulk */}
       <Splash />
 

@@ -26,7 +26,7 @@ const phrases = [
   },
   {
     title: "Is he passionate about web development, though?",
-    subtitle: "well he keeps on plugging away, trying to improve his Web Dev skills"
+    subtitle: "well he keeps on plugging away, trying to improve his ????????? skills"
   },
   {
     title: "Can he impliment Responsive Design?",
