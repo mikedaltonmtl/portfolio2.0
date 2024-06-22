@@ -9,8 +9,9 @@ const skills = [
   'Next.js',
   'Node.js',
   'Tailwind CSS',
+  'Material-UI',
   'GitHub',
-  'PostgreSQL'
+  'PostgreSQL',
 ];
 
 export default function Skills() {

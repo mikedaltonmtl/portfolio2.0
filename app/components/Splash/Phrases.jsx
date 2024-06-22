@@ -6,36 +6,40 @@ import styles from './Splash.module.css';
 const phrases = [
   {
     title: "Who is this Mike Dalton?",
-    subtitle: "let's find out, shall we?"
+    subtitle: "Let's find out, shall we?"
   },
   {
     title: "He's really quite a boring person",
-    subtitle: "who actually enjoys testing and debugging code"
+    subtitle: "who actually enjoys testing and debugging"
   },
   {
     title: "He may look a little old",
     subtitle: "but he doesn't half learn fast!"
   },
   {
-    title: "They say he's slightly OCD",
-    subtitle: "but that just means he keeps it all pixel-perfect"
-  },
-  {
     title: "Does he really love to code?",
-    subtitle: "the answer is 'yes!' especially if he gets to use React"
+    subtitle: "The answer is 'yes!' especially if he gets to use React"
   },
   {
     title: "Is he passionate about web development, though?",
-    subtitle: "well he keeps on plugging away, trying to improve his ????????? skills"
+    subtitle: "Well he keeps on plugging away, gradually figuring things out"
   },
   {
     title: "Can he impliment Responsive Design?",
-    subtitle: "he know his way around ....."
+    subtitle: "See for yourself, try this site on another device or resize your browser"
   },
   {
-    title: "Creative Problem Solver",
-    subtitle: "Approaches challenges with a creative mindset, delivering innovative solutions."
-  }
+    title: "They say he's slightly OCD",
+    subtitle: "and they'd be right, but that means he keeps it all pixel-perfect"
+  },
+  {
+    title: "Is it true that he doesn't have much of an ego?",
+    subtitle: "Well, you try applying for junior positions at his age and still be arrogant"
+  },
+  {
+    title: "What about those Dad jokes, though?",
+    subtitle: "You're right, there's just no excuse"
+  },
 ];
 
 

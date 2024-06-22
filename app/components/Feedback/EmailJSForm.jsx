@@ -28,12 +28,18 @@ export default function EmailJSForm() {
   return (
     <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
-      <input type="text" name="user_name" />
+      <input type="text" name="name" required />
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input type="email" name="email" required />
       <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+      <textarea name="message" required />
+      {/* <input type="submit" value="Send" /> */}
+      <button
+        type="submit"
+        class="px-4 py-2 rounded-md hover:bg-blue-600 bg-blue-500 text-white"
+      >
+        Submit
+      </button>
     </form>
   );
 }
