@@ -6,7 +6,7 @@ import styles from './Splash.module.css';
 const phrases = [
   {
     title: "Who is this Mike Dalton?",
-    subtitle: "Let's find out, shall we?"
+    subtitle: "Let's find out, shall we..."
   },
   {
     title: "He's really quite a boring person",
@@ -35,6 +35,10 @@ const phrases = [
   {
     title: "Is it true that he doesn't have much of an ego?",
     subtitle: "Well, you try applying for junior positions at his age and still be arrogant"
+  },
+  {
+    title: "Why so few GitHub commits though?",
+    subtitle: "The chatbots he's been working with never seem to get round to merging his pull requests"
   },
   {
     title: "What about those Dad jokes, though?",

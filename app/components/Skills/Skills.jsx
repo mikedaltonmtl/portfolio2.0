@@ -18,7 +18,7 @@ export default function Skills() {
   return (
     <section className="pt-24 w-full flex pl-[3vw] flex-col">
       <FadeIn threshold={0.8} >
-        <h2 className="text-4xl font-bold text-primary mb-5">A few things I&apos;ve learned</h2>
+        <h2 className="text-4xl font-bold text-primary mb-5">A Few Things I&apos;ve Learned</h2>
       </FadeIn>
       <div className={`max-w-[800px] overflow-hidden ${styles.scroller}`}>
         <ul className={`m-0 flex flex-wrap gap-[1rem] list-none ${styles.scrollerInner}`}>

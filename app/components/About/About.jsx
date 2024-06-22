@@ -48,6 +48,7 @@ export default function About() {
           <p className="text-lg text-primary mb-5">
             I didn&apos;t have the opportunity to study programming or computer science at school, so after
              leaving university with an economics degree, I went to work in marketing - at an IT company.
+             
           </p>
         </FadeIn>
         <FadeIn>
