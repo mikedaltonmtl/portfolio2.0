@@ -53,7 +53,7 @@ const projects = [
 export default function ProjectList() {
   return (
     <>
-      {projects.map((project) => (
+      {projects.map(project => (
         <div
           key={project.id}
           className="relative"

@@ -34,7 +34,7 @@ export default function Header() {
           <i className={`text-primary text-3xl fab fa-discord ${scrolled ? 'animate-jiggle' : ''}`} />
         </Link>
       </div>
-      <Link href="/contact" className="flex gap-2 items-center animate-slide-in-from-right">
+      <Link href="#contact" className="flex gap-2 items-center animate-slide-in-from-right">
         <i className={`text-primary text-3xl fas fa-envelope ${scrolled ? 'animate-antiJiggle' : ''}`} />
         <span className={`text-primary font-bold ${scrolled ? 'animate-jiggle' : ''}`}>Contact</span>
       </Link>

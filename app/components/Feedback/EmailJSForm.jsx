@@ -36,7 +36,7 @@ export default function EmailJSForm() {
       {/* <input type="submit" value="Send" /> */}
       <button
         type="submit"
-        class="px-4 py-2 rounded-md hover:bg-blue-600 bg-blue-500 text-white"
+        className="px-4 py-2 rounded-md hover:bg-blue-600 bg-blue-500 text-white"
       >
         Submit
       </button>

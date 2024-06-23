@@ -20,7 +20,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="h-[400vh] relative">
+    <section id="projects" className="h-[400vh] relative">
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="scroll-section top-0 h-full w-screen will-change-transform flex justify-start items-center gap-x-80 ml-10 pr-[5vw]">
           <div className="h-3/5 mb-4">
@@ -31,7 +31,6 @@ export default function Projects() {
           <ProjectList />
         </div>
       </div>
-    </div>
-
+    </section>
   );
 }
