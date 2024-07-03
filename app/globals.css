@@ -1,4 +1,19 @@
 @tailwind base;
+
+/* Firefox */
+* {
+  scrollbar-color: #f97316 #ffffdb;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar-track {
+  background: #ffffdb;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f97316;
+}
+
 @tailwind components;
 @tailwind utilities;
 @import '@fortawesome/fontawesome-free/css/all.min.css';

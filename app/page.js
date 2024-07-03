@@ -8,16 +8,12 @@ import Splash from "./components/Splash/Splash";
 export default function Home() {
   return (
     <main>
-      {/* scrollbar  scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/40 scroll-smooth */}
       <Header />
       <Splash />
       <About />
       <Projects />
       <Skills />
       <Feedback />
-      {/* just to add bulk */}
-      <Splash />
-
     </main>
   );
 }
