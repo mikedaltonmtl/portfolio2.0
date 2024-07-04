@@ -26,19 +26,36 @@ export default function EmailJSForm() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="name" required />
-      <label>Email</label>
-      <input type="email" name="email" required />
-      <label>Message</label>
-      <textarea name="message" required />
-      {/* <input type="submit" value="Send" /> */}
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      className="flex flex-col gap-4 p-4 rounded border border-primary max-w-xl"
+    >
+      <input
+        name="name"
+        type="text"
+        className="basis-10 p-3 font-semibold transition-all shadow rounded border-b-2 border-white hover:border-b-primary/80"
+        placeholder="Name"
+        required
+      />
+      <input
+        name="email"
+        type="email"
+        className="basis-10 p-3 font-semibold transition-all shadow rounded border-b-2 border-white hover:border-b-primary/80"
+        placeholder="Email"
+        required
+      />
+      <textarea
+        name="message"
+        className="basis-40 p-3 font-semibold transition-all shadow rounded border-b-2 border-white hover:border-b-primary/80 resize-none"
+        placeholder="Message"
+        required
+      />
       <button
         type="submit"
-        className="px-4 py-2 rounded-md hover:bg-blue-600 bg-blue-500 text-white"
+        className="grow basis-10 shrink px-4 py-2 rounded-md hover:bg-primary/30 bg-primary text-white h-10"
       >
-        Submit
+        Send
       </button>
     </form>
   );
