@@ -4,6 +4,8 @@ import emailjs from '@emailjs/browser';
 
 export default function EmailJSForm() {
   const form = useRef();
+  const commonEffects = "p-3 transition-all shadow rounded border-b-2 border-white hover:border-b-primary/80 focus:outline-none focus:border focus:border-primary";
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,31 +31,31 @@ export default function EmailJSForm() {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="flex flex-col gap-4 p-4 rounded border border-primary max-w-xl"
+      className="flex flex-col gap-4 p-4 rounded border border-primary max-w-xl font-semibold"
     >
       <input
         name="name"
         type="text"
-        className="basis-10 p-3 font-semibold transition-all shadow rounded border-b-2 border-white hover:border-b-primary/80"
+        className={`basis-10 ${commonEffects}`}
         placeholder="Name"
         required
       />
       <input
         name="email"
         type="email"
-        className="basis-10 p-3 font-semibold transition-all shadow rounded border-b-2 border-white hover:border-b-primary/80"
+        className={`basis-10 ${commonEffects}`}
         placeholder="Email"
         required
       />
       <textarea
         name="message"
-        className="basis-40 p-3 font-semibold transition-all shadow rounded border-b-2 border-white hover:border-b-primary/80 resize-none"
+        className={`basis-40 resize-none ${commonEffects}`}
         placeholder="Message"
         required
       />
       <button
         type="submit"
-        className="grow basis-10 shrink px-4 py-2 rounded-md hover:bg-primary/30 bg-primary text-white h-10"
+        className="grow basis-10 px-4 py-2 h-10 w-min rounded-md bg-primary text-white hover:border-primary hover:bg-white hover:text-primary"
       >
         Send
       </button>

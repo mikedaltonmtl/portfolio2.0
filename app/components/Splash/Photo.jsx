@@ -6,31 +6,13 @@ import LinkItem from './LinkItem';
 
 export default function Photo() {
   const [image, setImage] = useState('/mikeB.jpeg');
-  const [timeoutId, setTimeoutId] = useState(null);
   const linkItems = [
     { href: '#about', text: 'About', image: '/cart1.png', alt: 'A photo of a cart' },
     { href: '#projects', text: 'Projects', image: '/cart2.jpeg', alt: 'A photo of another cart' },
+    { href: '#skills', text: 'Stack', image: '/cart1.png', alt: 'A photo of a cart' },
     { href: '#contact', text: 'Contact', image: '/mikeA.jpg', alt: 'A photo of Mike Dalton' },
   ];
   const originalImageAlt = 'A photo of Mike Dalton';
-
-  const handleMouseOver = (newImage) => {
-    if (timeoutId) clearTimeout(timeoutId);
-    setTimeoutId(
-      setTimeout(() => {
-        setImage(newImage);
-      }, 200)
-    );
-  };
-
-  const handleMouseOut = () => {
-    if (timeoutId) clearTimeout(timeoutId);
-    setTimeoutId(
-      setTimeout(() => {
-        setImage('/mikeB.jpeg');
-      }, 500)
-    );
-  };
 
   return (
     <section className="pt-10 pr-20 w-1/2">
@@ -50,14 +32,14 @@ export default function Photo() {
             />
           </div>
         </div>
-        <nav className="flex justify-center gap-4 text-4xl mt-6">
+        <nav className="flex justify-center text-4xl mt-6">
           {linkItems.map((item) => (
             <LinkItem
               key={item.href}
               href={item.href}
               text={item.text}
-              onMouseOver={() => handleMouseOver(item.image)}
-              onMouseOut={handleMouseOut}
+              onMouseOver={() => setImage(item.image)}
+              onMouseOut={() => setImage('/mikeB.jpeg')}
             />
           ))}
         </nav>

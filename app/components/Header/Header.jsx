@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const commonEffects = "text-primary text-3xl transition-all hover:text-orange-600 hover:scale-110 ";
+  const commonEffects = "text-primary text-3xl transition-all hover:text-orange-600 hover:scale-110";
 
   useEffect(() => {
     const handleScroll = () => {

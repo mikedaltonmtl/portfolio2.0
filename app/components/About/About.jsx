@@ -21,7 +21,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex justify-between items-start gap-20 px-[3vw] py-16"
+      className="flex justify-between items-start gap-20 px-[3vw]"
     >
       <div className="flex-grow-0 mt-4">
         <FadeIn threshold={0.4} >
