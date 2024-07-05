@@ -1,0 +1,80 @@
+.sendContainer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sendContainer button {
+  width: 240px;
+  height: 60px;
+  border: 2px solid #f97316;
+  background: #f97316;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.sendContainer button:hover {
+  background: #fff;
+  color: #f97316;
+  transition: 0.5s;
+}
+
+.checkBox {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  right: -30px;
+  opacity: 0;
+}
+
+.checkBox svg {
+  width: 40px;
+  margin: 10px;
+}
+
+.sendContainer svg path {
+  stroke-width: 3;
+  stroke: #fff;
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+  stroke-linecap: round;
+}
+
+button.active  {
+  background: #f97316;
+  transition: 1s;
+}
+
+button.active:hover  {
+  background: #f97316;
+  color: #fff;
+}
+
+.active .checkBox {
+  right: 0;
+  opacity: 1;
+  transition: 1s;
+}
+
+.active p {
+  margin-right: 125px;
+  transition: 1s;
+}
+
+.active svg path {
+  stroke-dashoffset: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}

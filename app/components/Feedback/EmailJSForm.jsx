@@ -1,9 +1,14 @@
 'use client';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import styles from './SendButton.module.css';
+
 
 export default function EmailJSForm() {
   const form = useRef();
+  const btn = useRef();
+  const [btnText, setBtnText] = useState('Send');
+
   const commonEffects = "p-3 transition-all shadow rounded border-b-2 border-white hover:border-b-primary/80 focus:outline-none focus:border focus:border-primary";
 
 
@@ -19,6 +24,7 @@ export default function EmailJSForm() {
       )
       .then(
         () => {
+          setBtnText("Thanks");
           console.log('SUCCESS!');
         },
         (error) => {
@@ -53,12 +59,20 @@ export default function EmailJSForm() {
         placeholder="Message"
         required
       />
-      <button
-        type="submit"
-        className="grow basis-10 px-4 py-2 h-10 w-min rounded-md bg-primary text-white hover:border-primary hover:bg-white hover:text-primary"
-      >
-        Send
-      </button>
+      <div className={styles.sendContainer}>
+        <button
+          type="submit"
+          ref={btn}
+          className={btnText === "Send" ? "" : styles.active}
+        >
+          <p>{btnText}</p>
+          <div className={styles.checkBox}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+            </svg>
+          </div>
+        </button>
+      </div>
     </form>
   );
 }
